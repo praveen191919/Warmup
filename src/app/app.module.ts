@@ -7,11 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './auth.service';
 
 import { AppComponent } from './app.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
