@@ -1,9 +1,9 @@
-<div *ngIf="authService.user | async">
+<span *ngIf="authService.user | async">
   <!-- Welcome {{ (authService.user | async)?.email }}! -->
   <app-header></app-header>
   <app-navigation></app-navigation>
 
-</div>
+</span>
 
 <div *ngIf="!(authService.user | async)">
   <h2 class="login">Log in Form</h2>
